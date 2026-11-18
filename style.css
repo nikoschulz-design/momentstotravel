@@ -39,7 +39,7 @@ header {
 
 /* Logo */
 .logo-sm { height: 54px; width: auto; }
-.logo-lg { width: 210px; height: auto; margin: 0 auto 36px; }
+.logo-lg { width: 120px; height: auto; margin: 0 auto 30px; }
 
 /* Hero */
 .hero { padding-top: 64px; padding-bottom: 72px; text-align: center; }
@@ -134,7 +134,7 @@ footer a:hover { color: var(--cream); }
 @media (max-width: 860px) {
   .menu li:not(:last-child) { display: none; }
   .hero { padding-top: 44px; padding-bottom: 56px; }
-  .logo-lg { width: 160px; margin-bottom: 28px; }
+  .logo-lg { width: 100px; margin-bottom: 24px; }
   .grid, .about, .contact-grid { grid-template-columns: 1fr; }
   .about { gap: 40px; }
   .portrait { max-width: 360px; }
