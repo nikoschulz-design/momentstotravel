@@ -61,11 +61,11 @@ section { padding: 100px 0; border-top: 1px solid var(--line); }
 h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(32px, 4.4vw, 48px); line-height: 1.12; margin-bottom: 24px; max-width: 720px; }
 .lead { color: var(--muted); max-width: 640px; font-size: 18px; }
 
-/* Approach */
-.three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; margin-top: 64px; }
-.three h3 { font-family: var(--serif); font-weight: 400; font-size: 26px; margin-bottom: 10px; }
-.three .num { font-family: var(--serif); font-size: 15px; color: var(--muted); margin-bottom: 14px; display: block; }
-.three p { color: var(--muted); font-size: 16px; }
+/* Arbeitsweise mit Icons */
+.four { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-top: 64px; }
+.four .icon { width: 96px; height: 96px; margin-bottom: 22px; }
+.four h3 { font-family: var(--serif); font-weight: 400; font-size: 25px; margin-bottom: 10px; line-height: 1.2; }
+.four p { color: var(--muted); font-size: 16px; }
 
 /* Services */
 .services { background: var(--cream-dark); }
@@ -132,10 +132,13 @@ footer a:hover { color: var(--cream); }
 .legal p, .legal li { color: var(--muted); max-width: 720px; }
 .open { font-style: italic; }
 
+@media (max-width: 1000px) {
+  .four { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 860px) {
   .menu li:not(:last-child) { display: none; }
-  .three, .grid, .about, .contact-grid { grid-template-columns: 1fr; }
-  .three { gap: 36px; }
+  .grid, .about, .contact-grid { grid-template-columns: 1fr; }
   .about { gap: 40px; }
   .portrait { max-width: 360px; }
   section { padding: 72px 0; }
@@ -146,4 +149,8 @@ footer a:hover { color: var(--cream); }
   form { grid-template-columns: 1fr; }
   .facts span { display: block; width: auto; }
   footer a { margin: 0 20px 0 0; }
+}
+
+@media (max-width: 560px) {
+  .four { grid-template-columns: 1fr; }
 }
